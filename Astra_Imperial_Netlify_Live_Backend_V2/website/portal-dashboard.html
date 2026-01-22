@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Portal Dashboard • Astra Imperial</title>
+  <link rel="stylesheet" href="assets/brand.css"/>
+  <script src="assets/config.js"></script>
+</head>
+<body data-page="dashboard">
+
+    <div class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <div class="mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Astra Imperial mark">
+  <defs>
+    <style>
+      .g{fill:#C6A24A;}
+      .s{stroke:#C6A24A;stroke-width:6;fill:none;opacity:.95}
+    </style>
+  </defs>
+  <circle class="s" cx="100" cy="100" r="74"/>
+  <path class="g" d="M100 28l10 46 46 10-46 10-10 46-10-46-46-10 46-10z" opacity=".9"/>
+  <rect class="g" x="92" y="58" width="16" height="84" rx="8"/>
+  <path class="s" d="M38 128c22 24 58 34 92 26 12-3 24-8 34-15" opacity=".5"/>
+</svg></div>
+          <div>
+            <div class="brand-name">ASTRA IMPERIAL</div>
+            <div class="brand-sub">Business Development & Strategic Systems</div>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="services.html">Services</a>
+          <a href="registrations.html">Registrations</a>
+          <a href="automation.html">AI & Automation</a>
+          <a href="proposals.html">Proposals</a>
+          <a href="relocation.html">Canada</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn ghost" href="portal-login.html">Client Portal</a>
+        </div>
+      </div>
+    </div>
+    
+
+<section class="section"><div class="container">
+  <div class="kicker">Dashboard</div>
+  <h2>Your submissions</h2>
+  <p class="muted">In live mode, this shows database submissions tied to your account. In demo mode, it shows local submissions.</p>
+  <div class="small muted" style="margin-top:10px">Mode: <b id="modeIndicator">--</b></div>
+  <div class="card" style="margin-top:18px">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div class="badge">Submissions</div>
+      <a class="btn" href="#" id="logoutBtn">Logout</a>
+    </div>
+    <table class="table" style="margin-top:10px">
+      <thead><tr><th>ID</th><th>Date</th><th>Name</th><th>Service</th><th>Score</th></tr></thead>
+      <tbody id="submissionsTable"></tbody>
+    </table>
+    <div class="small muted" style="margin-top:12px">Submit a new request: <a href="onboarding.html" class="pill">Onboarding</a></div>
+  </div>
+</div></section>
+
+<div class="footer">
+  <div class="container">© 2026 Astra Imperial Ltd • Global Operations • Confidential</div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

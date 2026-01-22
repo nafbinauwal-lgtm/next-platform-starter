@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Client Portal • Login</title>
+  <link rel="stylesheet" href="assets/brand.css"/>
+  <script src="assets/config.js"></script>
+</head>
+<body data-page="login">
+
+    <div class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <div class="mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Astra Imperial mark">
+  <defs>
+    <style>
+      .g{fill:#C6A24A;}
+      .s{stroke:#C6A24A;stroke-width:6;fill:none;opacity:.95}
+    </style>
+  </defs>
+  <circle class="s" cx="100" cy="100" r="74"/>
+  <path class="g" d="M100 28l10 46 46 10-46 10-10 46-10-46-46-10 46-10z" opacity=".9"/>
+  <rect class="g" x="92" y="58" width="16" height="84" rx="8"/>
+  <path class="s" d="M38 128c22 24 58 34 92 26 12-3 24-8 34-15" opacity=".5"/>
+</svg></div>
+          <div>
+            <div class="brand-name">ASTRA IMPERIAL</div>
+            <div class="brand-sub">Business Development & Strategic Systems</div>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="services.html">Services</a>
+          <a href="registrations.html">Registrations</a>
+          <a href="automation.html">AI & Automation</a>
+          <a href="proposals.html">Proposals</a>
+          <a href="relocation.html">Canada</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn ghost" href="portal-login.html">Client Portal</a>
+        </div>
+      </div>
+    </div>
+    
+
+<section class="section"><div class="container">
+  <div class="kicker">Client Portal</div>
+  <h2>Secure access</h2>
+  <p class="muted">Real client accounts are enabled when Supabase is configured. Otherwise the portal runs in DEMO mode.</p>
+  <div class="small muted" style="margin-top:10px">Mode: <b id="modeIndicator">--</b></div>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:18px;margin-top:18px">
+    <div class="card">
+      <h3>Login</h3>
+      <form id="loginForm">
+        <div class="label">Email or username</div>
+        <input class="input" id="username" placeholder="email@domain.com (recommended)"/>
+        <div class="label">Password</div>
+        <input class="input" id="password" type="password" placeholder="Your password"/>
+        <div style="margin-top:14px"><button class="btn primary" type="submit">Login</button></div>
+      </form>
+      <hr class="sep"/>
+      <div class="muted small">DEMO fallback (if not live): <span class="pill">admin</span> / <span class="pill">Astra2026!</span></div>
+    </div>
+    <div class="card">
+      <h3>Create account</h3>
+      <form id="signupForm">
+        <div class="label">Email</div><input class="input" id="signupEmail" placeholder="email@domain.com"/>
+        <div class="label">Password</div><input class="input" id="signupPassword" type="password" placeholder="Create a strong password"/>
+        <div style="margin-top:14px"><button class="btn" type="submit">Sign up</button></div>
+      </form>
+      <hr class="sep"/>
+      <div class="notice">For production, enable email verification + password reset in Supabase Auth.</div>
+    </div>
+  </div>
+</div></section>
+
+<div class="footer">
+  <div class="container">© 2026 Astra Imperial Ltd • Global Operations • Confidential</div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Onboarding • Astra Imperial</title>
+  <link rel="stylesheet" href="assets/brand.css"/>
+  <script src="assets/config.js"></script>
+</head>
+<body data-page="onboarding">
+
+    <div class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <div class="mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Astra Imperial mark">
+  <defs>
+    <style>
+      .g{fill:#C6A24A;}
+      .s{stroke:#C6A24A;stroke-width:6;fill:none;opacity:.95}
+    </style>
+  </defs>
+  <circle class="s" cx="100" cy="100" r="74"/>
+  <path class="g" d="M100 28l10 46 46 10-46 10-10 46-10-46-46-10 46-10z" opacity=".9"/>
+  <rect class="g" x="92" y="58" width="16" height="84" rx="8"/>
+  <path class="s" d="M38 128c22 24 58 34 92 26 12-3 24-8 34-15" opacity=".5"/>
+</svg></div>
+          <div>
+            <div class="brand-name">ASTRA IMPERIAL</div>
+            <div class="brand-sub">Business Development & Strategic Systems</div>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="services.html">Services</a>
+          <a href="registrations.html">Registrations</a>
+          <a href="automation.html">AI & Automation</a>
+          <a href="proposals.html">Proposals</a>
+          <a href="relocation.html">Canada</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn ghost" href="portal-login.html">Client Portal</a>
+        </div>
+      </div>
+    </div>
+    
+
+<section class="section"><div class="container">
+  <div class="kicker">Automated Onboarding</div>
+  <h2>Project intake</h2>
+  <p class="muted">This form scores submissions and stores them in a database when Supabase is configured. Otherwise it runs in DEMO mode (local storage).</p>
+  <div class="small muted" style="margin-top:10px">Mode: <b id="modeIndicator">--</b></div>
+  <div class="card" style="margin-top:18px">
+    <form id="onboardForm">
+      <div class="row two">
+        <div><div class="label">Full Name</div><input class="input" name="name" id="name" placeholder="Your name"/></div>
+        <div><div class="label">Company</div><input class="input" name="company" id="company" placeholder="Company name (if any)"/></div>
+      </div>
+      <div class="row two">
+        <div><div class="label">Email</div><input class="input" name="email" id="email" placeholder="name@domain.com"/></div>
+        <div><div class="label">Phone</div><input class="input" name="phone" id="phone" placeholder="+234..."/></div>
+      </div>
+      <div class="label">Service Required</div><input class="input" name="service" id="service" placeholder="Business Development / Registrations / AI & Automation / Media"/>
+      <div class="row two">
+        <div><div class="label">Industry</div><input class="input" name="industry" id="industry" placeholder="Mining, Beauty, Tech, Agriculture, etc."/></div>
+        <div><div class="label">Jurisdiction (if registration)</div><input class="input" name="jurisdiction" id="jurisdiction" placeholder="Country / province / state"/></div>
+      </div>
+      <div class="label">Brief (min 80 characters recommended)</div>
+      <textarea class="input" name="brief" id="brief" rows="5" placeholder="Describe your objective, constraints, and timeline..."></textarea>
+      <hr class="sep"/>
+      <div class="row two">
+        <div>
+          <div class="label">Urgency</div>
+          <label class="muted"><input type="radio" name="urgency" value="5"> Low</label><br/>
+          <label class="muted"><input type="radio" name="urgency" value="10" checked> Normal</label><br/>
+          <label class="muted"><input type="radio" name="urgency" value="20"> High</label>
+        </div>
+        <div>
+          <div class="label">Budget Readiness</div>
+          <label class="muted"><input type="radio" name="budget" value="5"> Unsure</label><br/>
+          <label class="muted"><input type="radio" name="budget" value="12" checked> Confirmed</label><br/>
+          <label class="muted"><input type="radio" name="budget" value="18"> Pre-approved</label>
+        </div>
+      </div>
+      <div class="row two">
+        <div>
+          <div class="label">Operational Readiness</div>
+          <label class="muted"><input type="radio" name="readiness" value="5"> Early</label><br/>
+          <label class="muted"><input type="radio" name="readiness" value="12" checked> Active</label><br/>
+          <label class="muted"><input type="radio" name="readiness" value="18"> Scaling</label>
+        </div>
+        <div>
+          <div class="label">Complexity</div>
+          <label class="muted"><input type="radio" name="complexity" value="8" checked> Standard</label><br/>
+          <label class="muted"><input type="radio" name="complexity" value="12"> Multi-region</label><br/>
+          <label class="muted"><input type="radio" name="complexity" value="18"> Regulated / High scrutiny</label>
+        </div>
+      </div>
+      <hr class="sep"/>
+      <div class="notice">Live score: <b id="scoreOut">--</b></div>
+      <div style="margin-top:14px">
+        <button class="btn primary" type="submit">Submit Intake</button>
+        <a class="btn" href="portal-login.html">Client Portal</a>
+      </div>
+    </form>
+  </div>
+</div></section>
+
+<div class="footer">
+  <div class="container">© 2026 Astra Imperial Ltd • Global Operations • Confidential</div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
